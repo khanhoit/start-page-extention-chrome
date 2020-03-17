@@ -1,0 +1,8 @@
+<h2>Hà nội</h2>
+<div style="position: relative;"> 
+    <div class="horizontal-scroll-wrapper  rectangles" style="top: 0; margin-bottom: 300%; padding-bottom: 300%;">
+        <ng-container *ngFor="let day of dataWeeks">
+            <app-timecurrent [timecurrentModel]="day"></app-timecurrent>
+        </ng-container>
+    </div>
+</div>

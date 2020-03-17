@@ -1,0 +1,10 @@
+<div class="text-center">
+    <app-currentday></app-currentday>
+</div>
+<div class="d-flex">
+    <ng-container *ngFor="let day of dataWeeks">
+        <app-weatherday [weatherdayModel]="day"></app-weatherday>
+    </ng-container>
+</div>
+
+

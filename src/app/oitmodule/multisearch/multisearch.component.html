@@ -1,0 +1,17 @@
+<form autocomplete="off" (submit)="submitSearch($event)" novalidate>
+    <a href="" #linkSearch hidden>
+        abc
+    </a>
+    <div class="input-group">
+        <input type="text" [(ngModel)]="textSearch" name="textSearch" 
+        class="text-center form-control border-top-0 border-left-0 border-right-0 mw-50 none-background"
+        style="width: 300px !important;">
+        <div class="ml-5"></div>
+        <select id="type" [(ngModel)]="typeBrowser" name="typeBrowser">
+            <option [value]="enum.value" *ngFor="let enum of allBrowsers| keyvalue ">
+                <span [innerHTML] ="iconBrands[enum.key]">
+                </span>
+            </option>
+        </select>
+    </div>
+</form>

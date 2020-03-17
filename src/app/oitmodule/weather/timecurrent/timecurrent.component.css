@@ -1,0 +1,9 @@
+.rectangles {
+    width:140px;
+    height:160px;
+    margin:1px;
+    padding:1px;
+    background:#cab;
+    transform:rotate(90deg) translateY(80px);
+    transform-origin: right top;
+  }
