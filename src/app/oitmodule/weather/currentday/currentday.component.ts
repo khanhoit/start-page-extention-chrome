@@ -13,9 +13,9 @@ export class CurrentdayComponent implements OnInit {
 
   constructor() {
     this.dataWeeks = [];
-    this.dataWeeks.push(new TimecurrentModel('12','mua','20'));
-    this.dataWeeks.push(new TimecurrentModel('12','mua','20'));
-    this.dataWeeks.push(new TimecurrentModel('12','mua','20'));
+    this.dataWeeks.push(new TimecurrentModel('1','mua','20'));
+    this.dataWeeks.push(new TimecurrentModel('2','mua','20'));
+    this.dataWeeks.push(new TimecurrentModel('3','mua','20'));
     this.dataWeeks.push(new TimecurrentModel('12','mua','20'));
     this.dataWeeks.push(new TimecurrentModel('12','mua','20'));
     this.dataWeeks.push(new TimecurrentModel('12','mua','20'));

@@ -1,1 +1,20 @@
-<p>todo works!</p>
+<div style="background-color: rgba(0, 0, 0, 0.64);">
+    <h3 class="text-center">Todo</h3>
+    <div class="oit-overide mb-1" 
+        cdkDropList
+        #todoList="cdkDropList"
+        [cdkDropListData]="dataItemTodo"
+        (cdkDropListDropped)="onDrop($event)"
+    >
+        <div *ngFor="let itemTodo of dataItemTodo" >
+            <app-itemtodo [itemTodo]="itemTodo" cdkDrag></app-itemtodo>
+        </div>
+    </div>
+    <form (submit)="addItem($event, inputSearch)" autocomplete="off" class="mt-0 text-center d-flex justify-content-center">
+        <input 
+            type="text" name="textSearch" #inputSearch placeholder="add todo"
+            class="text-center form-control border-top-0 border-left-0 border-right-0 mw-50 none-background"
+            style="width:300px"
+            >
+    </form>
+</div>

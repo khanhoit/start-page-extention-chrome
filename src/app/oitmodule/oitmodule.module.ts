@@ -10,19 +10,21 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WeatherdayComponent } from './weather/weatherday/weatherday.component';
 import { CurrentdayComponent } from './weather/currentday/currentday.component';
 import { TimecurrentComponent } from './weather/timecurrent/timecurrent.component';
-
+import { ItemtodoComponent } from './todo/itemtodo/itemtodo.component';
+import { DragDropModule } from '@angular/cdk/drag-drop'
 @NgModule({
   declarations: [
     CenterComponent, 
     WeatherComponent, 
     TodoComponent, 
     MultisearchComponent, 
-    SettingComponent, WeatherdayComponent, CurrentdayComponent, TimecurrentComponent],
+    SettingComponent, WeatherdayComponent, CurrentdayComponent, TimecurrentComponent, ItemtodoComponent],
   imports: [
     CommonModule,
     FormsModule, 
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    DragDropModule
   ],
   exports:[
     CenterComponent,

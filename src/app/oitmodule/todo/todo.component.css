@@ -1,0 +1,30 @@
+.oit-overide{
+    height: 180px;
+    overflow: auto;
+}
+
+
+input:focus {
+    outline: none;
+}
+.form-control:focus {
+    border: none;
+    border-bottom: 1px solid #ffc107 !important;
+    box-shadow: 1px 4px 2px 0px rgba(0, 123, 255, 0);
+}
+.none-background {
+    color: white !important;
+    background: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: white;
+  }
+  
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+  
+::placeholder {
+    color: white;
+}

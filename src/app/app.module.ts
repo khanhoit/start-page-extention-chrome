@@ -7,7 +7,6 @@ import { OitmoduleModule } from './oitmodule/oitmodule.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     AppComponent

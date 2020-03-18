@@ -1,16 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
-::-webkit-scrollbar {
-    color: red !important;
-    width: 25px;
-    height: 25px;
-  }
-  
-::-webkit-scrollbar-button {
-    color: red !important;
-    width: 25px;
-    height: 25px;
-}
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
   
 html, 
 body {

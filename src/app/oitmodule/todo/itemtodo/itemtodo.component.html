@@ -1,0 +1,12 @@
+<li class="d-flex justify-content-between oit-itemtodo px-2" *ngIf="!itemTodo.deleted" draggable="true">
+    <div>
+        <input class="toggle" type="checkbox" [checked]="itemTodo.isChecked" (click)="toggle()">
+    </div>
+    <div [ngClass]="{'completed' : itemTodo.isChecked}" class="ml-2 mb-0 flex-fill oit-max-width-itemtodo oit-itemtodoLabel" #oitItemLabel
+    contenteditable="true" (click)="edit($event)" (input)="inputLabel()" (focusout)="focusout(oitItemLabel)">{{itemTodo.label}}</div>
+    <div class="oit-edit-itemTodo-wrapper">
+        <span class="oit-edit-itemTodo font-weight-bold">
+            ...
+        </span>
+    </div>
+</li>

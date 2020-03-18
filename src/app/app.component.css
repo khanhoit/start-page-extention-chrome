@@ -1,5 +1,6 @@
 .my-background{
-    background-image: url('https://pixabay.com/get/57e7d0424e57a914f6da8c7dda793e76133fdbe4534c704c7d2b7fd7964dc058_1280.jpg');
+    /* background-image: url('https://pixabay.com/get/57e7d0424e57a914f6da8c7dda793e76133fdbe4534c704c7d2b7fd7964dc058_1280.jpg'); */
+    background-image: url('../assets/img/oit-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

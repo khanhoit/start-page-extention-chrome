@@ -1,18 +1,17 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-multisearch',
   templateUrl: './multisearch.component.html',
   styleUrls: ['./multisearch.component.css']
 })
 export class MultisearchComponent implements OnInit {
-  
   @ViewChild('linkSearch') linkSearch: ElementRef;
 
   iconBrands;
   allBrowsers;
-  faCoffee;
+  faCoffee = faCoffee;
   textSearch;
   typeBrowser;
 
@@ -30,6 +29,7 @@ export class MultisearchComponent implements OnInit {
     this.linkSearch.nativeElement.href = this.typeBrowser + this.textSearch;
     this.linkSearch.nativeElement.click();
   }
+
 }
 
 export enum URLs {
@@ -40,7 +40,7 @@ export enum URLs {
 }
 
 export const IconBrands = {
-  URL_GOOGLE: "<i> google </i>",
+  URL_GOOGLE: '<div class="text-primary fa faCoffee"> </div>',
   URL_YOUTUBE: "youtube",
   URL_DUCKDUCKGO: "duckduckgo",
   URL_BRING: "bring",

@@ -9,9 +9,10 @@
         <div class="ml-5"></div>
         <select id="type" [(ngModel)]="typeBrowser" name="typeBrowser">
             <option [value]="enum.value" *ngFor="let enum of allBrowsers| keyvalue ">
-                <span [innerHTML] ="iconBrands[enum.key]">
-                </span>
+                <div [innerHTML] ="iconBrands[enum.key]">
+                </div>
             </option>
         </select>
     </div>
 </form>
+
