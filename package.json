@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "compodoc": "./node_modules/.bin/compodoc -p tsconfig.json -w -s --port 4202 -o"
   },
   "private": true,
   "dependencies": {
